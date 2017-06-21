@@ -1,11 +1,11 @@
 <template>
     <div class="table-view-pf-btn metadata-display">
-        <vs-dropdown v-if="displayMetadata" class="dropdown dropdown-kebab-pf">
+        <v-dropdown v-if="displayMetadata" class="dropdown dropdown-kebab-pf">
             <div slot="button">View</div>
             <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right dropdown-menu-container">
                 <code v-html="formattedRowString"></code>
             </div>
-        </vs-dropdown>
+        </v-dropdown>
         <button v-else class="btn btn-default disabled">None</button>
     </div>
 </template>
