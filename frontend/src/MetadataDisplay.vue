@@ -64,7 +64,7 @@ export default {
     },
     options: {
         asPlainText(row) {
-            return hasMetadata(row) ? 'v' : 'n';
+            return hasMetadata(row) ? 'View' : 'None';
         }
     },
     computed: {
