@@ -14,6 +14,7 @@ Services.initialize('/discovery');
 
 import StatusLabel from './StatusLabel.vue';
 import MetadataDisplay from './MetadataDisplay.vue';
+import RegistrationText from './RegistrationText.vue';
 
 export default {
     name: 'Services',
@@ -30,7 +31,7 @@ export default {
                 { label: 'Name', field: 'name' },
                 { label: 'Type', field: 'type' },
                 { label: 'Endpoint', field: 'location.endpoint' },
-                { label: 'Registration', field: 'registration' },
+                { label: 'Registration', component: RegistrationText },
                 { label: 'Status', component: StatusLabel },
                 { label: 'Metadata', component: MetadataDisplay, cellClass: 'table-view-pf-actions' }
             ],
