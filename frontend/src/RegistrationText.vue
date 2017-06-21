@@ -1,6 +1,12 @@
 <template>
-<code>{{ row.registration }}</code>
+<span class="registration-text">{{ row.registration }}</span>
 </template>
+
+<style lang="scss">
+.registration-text {
+    font-family: Menlo,Monaco,Consolas,monospace;
+}
+</style>
 
 <script>
 export default {
