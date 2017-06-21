@@ -11,4 +11,19 @@
     </parent>
 
     <artifactId>vertx-console-services</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>in.yunyul</groupId>
+            <artifactId>vertx-console-base</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-service-discovery</artifactId>
+            <version>3.4.2</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

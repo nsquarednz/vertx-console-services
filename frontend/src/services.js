@@ -30,7 +30,7 @@ function updateServices() {
 
 export default {
     initialize(endpoint) {
-        url = endpoint;
+        url = window.location.pathname + endpoint;
         updateServices();
         setInterval(updateServices, 1000);
     },
