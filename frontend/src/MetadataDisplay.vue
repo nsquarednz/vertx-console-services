@@ -1,21 +1,24 @@
 <template>
-    <div class="table-view-pf-btn metadata-display">
-        <dropdown v-if="displayMetadata" class="dropdown dropdown-kebab-pf">
-            <div slot="button">View</div>
-            <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right dropdown-menu-container">
-                <code v-html="formattedRowString"></code>
-            </div>
-        </dropdown>
-        <button v-else class="btn btn-default disabled">None</button>
+    <dropdown v-if="displayMetadata" class="table-view-pf-btn metadata-display dropdown dropdown-kebab-pf">
+        <div slot="button">View</div>
+        <div slot="dropdown-menu" class="dropdown-menu dropdown-menu-right dropdown-menu-container">
+            <code v-html="formattedRowString"></code>
+        </div>
+    </dropdown>
+    <div v-else class="table-view-pf-btn">
+        <button class="btn btn-default" disabled>None</button>
     </div>
 </template>
 
 <style lang="scss">
-.metadata-display>.btn-group {
+.metadata-display.btn-group {
     width: 100%;
-    height: 100%;
 
-    .btn .caret {
+    .btn {
+        border-radius: 0;
+    }
+
+    .caret {
         display: none;
     }
 
