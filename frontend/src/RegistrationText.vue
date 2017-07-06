@@ -5,6 +5,7 @@
 <style lang="scss">
 .registration-text {
     font-family: Menlo,Monaco,Consolas,monospace;
+    line-height: 19px;
 }
 </style>
 

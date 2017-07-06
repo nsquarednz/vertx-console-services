@@ -16,6 +16,10 @@
 
     .btn {
         border-radius: 0;
+        display: block;
+        &>div:first-child {
+            line-height: 21.5px;
+        }
     }
 
     .caret {
