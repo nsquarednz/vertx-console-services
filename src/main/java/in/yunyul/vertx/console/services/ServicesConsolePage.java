@@ -10,6 +10,10 @@ import io.vertx.servicediscovery.rest.ServiceDiscoveryRestEndpoint;
 public class ServicesConsolePage implements ConsolePage {
     private ServiceDiscovery discovery;
 
+    public static ServicesConsolePage create(ServiceDiscovery discovery) {
+        return new ServicesConsolePage(discovery);
+    }
+
     public ServicesConsolePage(ServiceDiscovery discovery) {
         this.discovery = discovery;
     }
