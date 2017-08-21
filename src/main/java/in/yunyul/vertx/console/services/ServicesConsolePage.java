@@ -10,11 +10,17 @@ import io.vertx.servicediscovery.rest.ServiceDiscoveryRestEndpoint;
 public class ServicesConsolePage implements ConsolePage {
     private ServiceDiscovery discovery;
 
+    /**
+     * Creates the services console page, using the provided service discovery instance
+     *
+     * @param discovery the service discovery instance
+     * @return the console page
+     */
     public static ServicesConsolePage create(ServiceDiscovery discovery) {
         return new ServicesConsolePage(discovery);
     }
 
-    public ServicesConsolePage(ServiceDiscovery discovery) {
+    private ServicesConsolePage(ServiceDiscovery discovery) {
         this.discovery = discovery;
     }
 
